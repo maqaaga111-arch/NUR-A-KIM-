@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Nur 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" id="start">
+    <h1 class="fade">Hayatımın Anlamı 💕</h1>
+    <button onclick="showQuestion()">Devam Et</button>
+  </div>
+
+  <div class="container hidden" id="question">
+    <h2>Beni seviyor musun? 💘</h2>
+    <div class="buttons">
+      <button id="yesBtn" onclick="sayYes()">Evet</button>
+      <button id="noBtn" onclick="sayNo(this)">Hayır</button>
+    </div>
+    <p id="noMessage"></p>
+  </div>
+
+  <div class="container hidden" id="love">
+    <h2 class="fade">Nur aşkım seni çok seviyorum 💖</h2>
+    <button onclick="showLetter()">Mektup 💌</button>
+  </div>
+
+  <div class="container hidden" id="letter">
+    <div class="envelope">
+      <div class="flap"></div>
+      <div class="paper">
+        <p>
+          Hayatımın anlamı, gönlümün sultanı...  
+          İyi ki varsın, seni çok seviyorum.  
+          Sen benim her şeyimsin ❤️🌸✨
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="music-control">
+    <button onclick="toggleMusic()">🎶 Müzik Aç/Kapat</button>
+  </div>
+
+  <audio id="bgMusic" src="static/music.m4a" autoplay loop></audio>
+  <script src="script.js"></script>
+</body>
+</html>
